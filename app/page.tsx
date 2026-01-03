@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { TypingHeader } from "@/components/TypingHeader"
 import { ActionButton } from "@/components/ActionButton"
 import { ThreeStarsIcon, OneStarIcon, TwoStarsIcon } from "@/components/CustomIcons"
@@ -9,13 +10,15 @@ import Image from "next/image"
 
 export default function Page() {
   const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const router = useRouter()
 
   const handleFormationClick = () => {
-    window.location.href = "https://zako-djawed.com/formation"
+    router.push("/formation")
   }
 
   const handleResourcesClick = () => {
-    window.location.href = "ADD_URL_HERE"
+    window.location.href =
+      "https://docs.google.com/document/d/1eim2Eg10PpDflclnrE5Fptu_EDW_i-QyIDPL0beFmW4/edit?usp=sharing"
   }
 
   const handleServicesClick = () => {
