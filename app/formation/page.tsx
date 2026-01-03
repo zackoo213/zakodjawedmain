@@ -144,18 +144,26 @@ export default function FormationPage() {
             <BentoSlot id="m-1" className="h-full w-full" src="/images/ugc-13.png" />
           </div>
 
-          {/* Row of 2 Squares */}
-          <div className="grid grid-cols-2 aspect-square gap-4 w-auto h-32">
-            <BentoSlot id="m-2" className="h-full" src="/images/free.png" />
-            <BentoSlot id="m-3" className="h-full" src="/images/1.png" />
+          <div className="grid grid-cols-2 gap-4">
+            <div className="aspect-square">
+              <BentoSlot id="m-2" className="h-full w-full" src="/images/free.png" />
+            </div>
+            <div className="aspect-square">
+              <BentoSlot id="m-3" className="h-full w-full" src="/images/1.png" />
+            </div>
           </div>
 
-          {/* Complex Row: Vertical Left + 2 Small Right */}
-          <div className="grid grid-cols-2 gap-4 h-72">
-            <BentoSlot id="m-4" className="h-full" src="/images/community-chat-v2.png" />
-            <div className="flex flex-col gap-4 h-72">
-              <BentoSlot id="m-5" className="flex-1" src="/images/2.png" />
-              <BentoSlot id="m-6" className="flex-1" src="/images/3.png" />
+          <div className="grid grid-cols-2 gap-4">
+            <div className="aspect-[1/2]">
+              <BentoSlot id="m-4" className="h-full w-full" src="/images/community-chat-v2.png" />
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="aspect-square">
+                <BentoSlot id="m-5" className="h-full w-full" src="/images/2.png" />
+              </div>
+              <div className="aspect-square">
+                <BentoSlot id="m-6" className="h-full w-full" src="/images/3.png" />
+              </div>
             </div>
           </div>
 
@@ -164,10 +172,13 @@ export default function FormationPage() {
             <BentoSlot id="m-7" className="h-full w-full" src="/images/ugc-14.png" />
           </div>
 
-          {/* Row of 2 Squares */}
-          <div className="grid grid-cols-2 gap-4 h-32">
-            <BentoSlot id="m-8" className="h-full" src="/images/4.png" />
-            <BentoSlot id="m-9" className="h-full" src="/images/5.png" />
+          <div className="grid grid-cols-2 gap-4">
+            <div className="aspect-square">
+              <BentoSlot id="m-8" className="h-full w-full" src="/images/4.png" />
+            </div>
+            <div className="aspect-square">
+              <BentoSlot id="m-9" className="h-full w-full" src="/images/5.png" />
+            </div>
           </div>
 
           {/* Final Banners */}
@@ -184,9 +195,14 @@ export default function FormationPage() {
               images={["/images/12.png", "/images/10.png", "/images/11.png", "/images/13.png"]}
             />
           </div>
-          <div className="grid grid-cols-2 gap-4 h-32">
-            <BentoSlot id="m-12" className="h-full" src="/images/prompt-agents.png" />
-            <BentoSlot id="m-13" className="h-full" src="/images/free-3.png" />
+
+          <div className="grid grid-cols-2 gap-4">
+            <div className="aspect-square">
+              <BentoSlot id="m-12" className="h-full w-full" src="/images/prompt-agents.png" />
+            </div>
+            <div className="aspect-square">
+              <BentoSlot id="m-13" className="h-full w-full" src="/images/free-3.png" />
+            </div>
           </div>
         </div>
       </div>
