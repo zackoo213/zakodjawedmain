@@ -55,7 +55,7 @@ export default function Page() {
               <ActionButton text="Formation" icon={ThreeStarsIcon} variant="primary" onClick={handleFormationClick} />
               <ActionButton text="Nos services" icon={TwoStarsIcon} variant="secondary" onClick={handleServicesClick} />
               <ActionButton
-                text="FREE Resources"
+                text="Free Resources"
                 icon={OneStarIcon}
                 variant="secondary"
                 onClick={handleResourcesClick}
