@@ -103,7 +103,7 @@ export default function FormationPage() {
           <BentoSlot id="d-1" className="col-span-3 row-span-2" src="/images/ugc-13.png" isDesktop={true} />
 
           {/* Row 1 - Middle: Top Left Square Slot */}
-          <BentoSlot id="d-2" className="col-span-1 row-span-1" src="/images/free.png" isDesktop={true} />
+          <BentoSlot id="d-2" className="col-span-1 row-span-1" src="/images/FREE.png" isDesktop={true} />
 
           {/* Row 1 & 2 - Right: Vertical Block (1x2) */}
           <BentoSlot
