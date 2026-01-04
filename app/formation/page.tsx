@@ -22,12 +22,7 @@ function BentoSlot({
       className={`relative group ${isDesktop ? "bg-transparent" : "bg-black"} rounded-[2rem] md:rounded-[2.5rem] overflow-hidden transition-transform hover:scale-[1.01] active:scale-100 ${className}`}
     >
       {src ? (
-        <Image
-          src={src || "/placeholder.svg"}
-          alt="Bento content"
-          fill
-          className={isDesktop ? "object-contain" : "object-cover"}
-        />
+        <Image src={src || "/placeholder.svg"} alt="Bento content" fill className="object-cover" />
       ) : (
         <div className="absolute inset-0 flex items-center justify-center opacity-20 px-0 mx-0 gap-0 py-0">
           <div className="w-12 h-12 border-2 border-white/20 rounded-full" />
@@ -67,7 +62,7 @@ function AnimatedBentoSlot({
           src={src || "/placeholder.svg"}
           alt={`Bento content ${index}`}
           fill
-          className={`${isDesktop ? "object-contain" : "object-cover"} transition-opacity duration-1000 ${
+          className={`object-cover transition-opacity duration-1000 ${
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
         />
@@ -97,44 +92,57 @@ export default function FormationPage() {
 
       {/* Bento Grid - Responsive implementation */}
       <div className="max-w-[1400px] mx-auto">
-        {/* Desktop Grid Layout (Hidden on Mobile) */}
-        <div className="hidden md:grid grid-cols-6 gap-5 auto-rows-[160px]">
-          {/* Row 1 & 2 - Top Left: Large Block (3x2) */}
-          <BentoSlot id="d-1" className="col-span-3 row-span-2" src="/images/ugc-13.png" isDesktop={true} />
+        {/* Desktop Grid Layout */}
+        <div className="hidden md:flex md:flex-col md:gap-6 md:max-w-[800px] md:mx-auto">
+          {/* Top Banner */}
+          <div className="aspect-[16/9] w-full">
+            <BentoSlot id="d-1" className="h-full w-full" src="/images/ugc-13.png" isDesktop={true} />
+          </div>
 
-          {/* Row 1 - Middle: Top Left Square Slot */}
-          <BentoSlot id="d-2" className="col-span-1 row-span-1" src="/images/FREE.png" isDesktop={true} />
+          <div className="grid grid-cols-2 gap-6">
+            <div className="aspect-square">
+              <BentoSlot id="d-2" className="h-full w-full" src="/images/FREE.png" isDesktop={true} />
+            </div>
+            <div className="aspect-square">
+              <BentoSlot id="d-3" className="h-full w-full" src="/images/1.png" isDesktop={true} />
+            </div>
+          </div>
 
-          {/* Row 1 & 2 - Right: Vertical Block (1x2) */}
-          <BentoSlot
-            id="d-3"
-            className="col-span-1 row-span-2 bg-[#0d0d0d]"
-            src="/images/community-chat-v2.png"
-            isDesktop={true}
-          />
+          <div className="grid grid-cols-2 gap-6">
+            <div className="aspect-[1/2]">
+              <BentoSlot id="d-4" className="h-full w-full" src="/images/community-chat-v2.png" isDesktop={true} />
+            </div>
+            <div className="flex flex-col gap-6">
+              <div className="aspect-square">
+                <BentoSlot id="d-5" className="h-full w-full" src="/images/5.png" isDesktop={true} />
+              </div>
+              <div className="aspect-square">
+                <BentoSlot id="d-6" className="h-full w-full" src="/images/prompt-agents.png" isDesktop={true} />
+              </div>
+            </div>
+          </div>
 
-          {/* Row 1 - Far Right: Square (1x1) - Right of top left square */}
-          <BentoSlot id="d-4" className="col-span-1 row-span-1" src="/images/1.png" isDesktop={true} />
+          {/* Full Width Banner */}
+          <div className="aspect-[16/8] w-full">
+            <BentoSlot id="d-7" className="h-full w-full" src="/images/ugc-14.png" isDesktop={true} />
+          </div>
 
-          {/* Row 2 - Middle: Square (1x1) */}
-          <BentoSlot id="d-5" className="col-span-1 row-span-1" src="/images/5.png" isDesktop={true} />
-
-          {/* Row 2 - Far Right: Square (1x1) */}
-          <BentoSlot id="d-6" className="col-span-1 row-span-1" src="/images/prompt-agents.png" isDesktop={true} />
-
-          {/* Row 3 - Bottom Row: 3 Horizontal Blocks (2x1 each) */}
-          <BentoSlot id="d-7" className="col-span-2 row-span-1" src="/images/ugc-14.png" isDesktop={true} />
-          <AnimatedBentoSlot
-            className="col-span-2 row-span-1"
-            interval={2000}
-            images={["/images/ugc-4.png", "/images/ugc-8.png", "/images/ugc-7.png"]}
-            isDesktop={true}
-          />
-          <AnimatedBentoSlot
-            className="col-span-2 row-span-1"
-            images={["/images/12.png", "/images/10.png", "/images/11.png", "/images/13.png"]}
-            isDesktop={true}
-          />
+          {/* Animated Banners */}
+          <div className="aspect-[16/9] w-full">
+            <AnimatedBentoSlot
+              className="h-full w-full"
+              interval={2000}
+              images={["/images/ugc-4.png", "/images/ugc-8.png", "/images/ugc-7.png"]}
+              isDesktop={true}
+            />
+          </div>
+          <div className="aspect-[16/9] w-full">
+            <AnimatedBentoSlot
+              className="h-full w-full"
+              images={["/images/12.png", "/images/10.png", "/images/11.png", "/images/13.png"]}
+              isDesktop={true}
+            />
+          </div>
         </div>
 
         {/* Mobile Grid Layout (Hidden on Desktop) */}
