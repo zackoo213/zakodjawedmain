@@ -114,10 +114,10 @@ export default function FormationPage() {
             </div>
             <div className="flex flex-col gap-6">
               <div className="aspect-square">
-                <BentoSlot id="d-5" className="h-full w-full" src="/images/5.png" isDesktop={true} />
+                <BentoSlot id="d-5" className="h-full w-full" src="/images/2.png" isDesktop={true} />
               </div>
               <div className="aspect-square">
-                <BentoSlot id="d-6" className="h-full w-full" src="/images/prompt-agents.png" isDesktop={true} />
+                <BentoSlot id="d-6" className="h-full w-full" src="/images/3.png" isDesktop={true} />
               </div>
             </div>
           </div>
@@ -125,6 +125,15 @@ export default function FormationPage() {
           {/* Full Width Banner */}
           <div className="aspect-[16/8] w-full">
             <BentoSlot id="d-7" className="h-full w-full" src="/images/ugc-14.png" isDesktop={true} />
+          </div>
+
+          <div className="grid grid-cols-2 gap-6">
+            <div className="aspect-square">
+              <BentoSlot id="d-8" className="h-full w-full" src="/images/4.png" isDesktop={true} />
+            </div>
+            <div className="aspect-square">
+              <BentoSlot id="d-9" className="h-full w-full" src="/images/5.png" isDesktop={true} />
+            </div>
           </div>
 
           {/* Animated Banners */}
@@ -142,6 +151,15 @@ export default function FormationPage() {
               images={["/images/12.png", "/images/10.png", "/images/11.png", "/images/13.png"]}
               isDesktop={true}
             />
+          </div>
+
+          <div className="grid grid-cols-2 gap-6">
+            <div className="aspect-square">
+              <BentoSlot id="d-12" className="h-full w-full" src="/images/prompt-agents.png" isDesktop={true} />
+            </div>
+            <div className="aspect-square">
+              <BentoSlot id="d-13" className="h-full w-full" src="/images/free-3.png" isDesktop={true} />
+            </div>
           </div>
         </div>
 
