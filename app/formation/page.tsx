@@ -146,7 +146,7 @@ export default function FormationPage() {
 
           <div className="grid grid-cols-2 gap-4">
             <div className="aspect-square">
-              <BentoSlot id="m-2" className="h-full w-full" src="/images/free.png" />
+              <BentoSlot id="m-2" className="h-full w-full" src="/images/FREE.png" />
             </div>
             <div className="aspect-square">
               <BentoSlot id="m-3" className="h-full w-full" src="/images/1.png" />
