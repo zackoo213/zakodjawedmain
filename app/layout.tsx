@@ -20,8 +20,8 @@ const geistMono = V0_Font_Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
+  title: "Zako & Djawed - AI Experts",
+  description: "The best place to learn AI in Algeria.",
   generator: "v0.app",
 }
 
