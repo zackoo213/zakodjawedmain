@@ -96,7 +96,7 @@ export default function FormationPage() {
         <div className="hidden md:flex md:flex-col md:gap-6 md:max-w-[800px] md:mx-auto">
           {/* Top Banner */}
           <div className="aspect-[16/9] w-full">
-            <BentoSlot id="d-1" className="h-full w-full" src="/images/ugc-13.png" isDesktop={true} />
+            <BentoSlot id="d-1" className="h-full w-full" src="/images/UGC-16.png" isDesktop={true} />
           </div>
 
           <div className="grid grid-cols-2 gap-6">
