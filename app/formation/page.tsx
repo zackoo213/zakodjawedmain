@@ -167,7 +167,7 @@ export default function FormationPage() {
         <div className="md:hidden flex flex-col gap-4">
           {/* Top Banner (from Screen 1) */}
           <div className="aspect-[16/9] w-full">
-            <BentoSlot id="m-1" className="h-full w-full" src="/images/ugc-13.png" />
+            <BentoSlot id="m-1" className="h-full w-full" src="/images/UGC-16.png" />
           </div>
 
           <div className="grid grid-cols-2 gap-4">
