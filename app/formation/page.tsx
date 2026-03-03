@@ -110,7 +110,7 @@ export default function FormationPage() {
 
           <div className="grid grid-cols-2 gap-6">
             <div className="aspect-[1/2]">
-              <BentoSlot id="d-4" className="h-full w-full" src="/images/Add-a-heading-6.png" isDesktop={true} />
+              <BentoSlot id="d-4" className="h-full w-full" src="/images/Add a heading-6.png" isDesktop={true} />
             </div>
             <div className="flex flex-col gap-6">
               <div className="aspect-square">
