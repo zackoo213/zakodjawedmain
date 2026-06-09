@@ -114,10 +114,10 @@ export default function FormationPage() {
             </div>
             <div className="flex flex-col gap-6">
               <div className="aspect-square">
-                <BentoSlot id="d-5" className="h-full w-full" src="/images/2.png" isDesktop={true} />
+                <BentoSlot id="d-5" className="h-full w-full" src="/images/Agent.png" isDesktop={true} />
               </div>
               <div className="aspect-square">
-                <BentoSlot id="d-6" className="h-full w-full" src="/images/3.png" isDesktop={true} />
+                <BentoSlot id="d-6" className="h-full w-full" src="/images/Agent-2.png" isDesktop={true} />
               </div>
             </div>
           </div>
